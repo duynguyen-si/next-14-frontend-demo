@@ -10,9 +10,9 @@ const getVideoSrc = async () => {
 };
 
 export default async function VideoComponent() {
-  const src = await getVideoSrc();
+  const src = (await getVideoSrc()) as string;
 
   return (
-    <iframe src={src} frameborder="0" allowFullScreen />
+    <iframe src={src} frameBorder="0" allowFullScreen />
   );
 }
