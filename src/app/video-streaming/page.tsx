@@ -1,4 +1,5 @@
 import { Suspense } from 'react';
+
 import VideoComponent from '@/components/video-component';
 
 export default function Page() {
